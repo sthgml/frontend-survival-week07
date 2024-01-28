@@ -1,11 +1,13 @@
 import Layout from './components/Layout';
-import Intro from './pages/Intro';
+import Error from './pages/Error';
+import Intro from './pages/Intro/Intro';
 
 const routes = [
   {
     element: (<Layout />),
     children: [
       { path: '/', element: (<Intro />) },
+      { path: '*', element: (<Error />) },
     ],
   },
 ];
