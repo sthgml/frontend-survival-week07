@@ -2,32 +2,23 @@
 
 데브로드 프론트엔드 생존코스 7주차 과제
 
-## 서버 실행하기
+## 01.기능 목록
 
-```shell
-cd express-app
+- `GET` `/restaurants` 식당 + 메뉴 목록 표시하기
+- 식당 이름 검색
+- 카테고리 필터링
+- 버튼 누르면 주문 내역에 추가 + 금액 추가
+- 삭제 누르면 주문 내역에서 삭제 + 금액 감소
+- `POST` `/orders` 주문하기
+- `GET` `/orders/:id` 주문 완료 페이지 : 주문번호와 주문목록, 총 가격 표시
 
-npm install
+## 99. 커밋 제목 컨벤션
 
-npx nodemon app.ts
-```
-
-## 프론트 실행하기
-
-```shell
-npm install
-
-npm start
-```
-
-## Unit 테스트
-
-```shell
-npm test
-```
-
-## E2E 테스트
-
-```shell
-npm run codeceptjs
-```
+| type(scope) | subject line |
+| --- | --- |
+| ✨ feat | 기능 추가, 삭제, 변경 |
+| 🐛 fix | 버그, 오류 수정 |
+| 📝 docs | README.md, json 파일 등 수정, 라이브러리 설치 (문서 관련, 코드 수정 없음) |
+| ♻️ refactor | 코드 리팩토링 |
+| 🧪 test | 테스트 코드 추가, 삭제, 변경 등 (코드 수정 없음, 테스트 코드에 관련된 모든 변경에 해당) |
+| 🌱 chore | 그 외 주석추가, 이동, 삭제 등 포함 |

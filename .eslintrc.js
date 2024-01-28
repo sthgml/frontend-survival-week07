@@ -50,14 +50,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'key-spacing': ['error', { mode: 'strict' }],
     'arrow-spacing': ['error', { before: true, after: true }],
-    'import/no-extraneous-dependencies': ['error', {
-      devDependencies: [
-        '**/*.test.js',
-        '**/*.test.jsx',
-        '**/*.test.ts',
-        '**/*.test.tsx',
-      ],
-    }],
+    'import/no-extraneous-dependencies': 0,
     'import/extensions': ['error', 'ignorePackages', {
       js: 'never',
       jsx: 'never',
