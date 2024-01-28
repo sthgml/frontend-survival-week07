@@ -1,5 +1,5 @@
-import React from 'react';
 import { useNavigate } from 'react-router';
+import useOrderStore from '../../../hooks/useStore';
 
 type ButtonProps = {
   label: string;
@@ -25,10 +25,15 @@ function Button({
 }
 
 export default function Intro() {
+  const [, store] = useOrderStore();
+
   const navigate = useNavigate();
+
   const handleBtnOr = (e: MouseEvent) => {
+    if (!e.target) return;
+    const isToGo = e.target.id === 'to-go';
+    store.setTogo(isToGo);
     navigate('/order');
-    console.log(e.target.id);
   };
 
   return (

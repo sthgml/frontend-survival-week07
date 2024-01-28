@@ -1,1 +1,1 @@
-import 'reflect-metadata';
+import 'reflect-metadata'; // this is for tsyringe

@@ -1,6 +1,7 @@
 import Layout from './components/Layout';
 import Error from './pages/Error';
-import Intro from './pages/Intro/Intro';
+import Intro from './pages/intro/Intro';
+import Order from './pages/order/Order';
 
 const routes = [
   {
@@ -8,6 +9,7 @@ const routes = [
     children: [
       { path: '/', element: (<Intro />) },
       { path: '*', element: (<Error />) },
+      { path: '*', element: (<Order />) },
     ],
   },
 ];
